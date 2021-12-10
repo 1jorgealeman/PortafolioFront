@@ -1,0 +1,53 @@
+@import "../../App.sass";
+
+.ed-header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	background-color: #2D2929;
+	.logo{
+		height: 2rem;
+	}
+
+	.redes{
+		img{
+			width: 2.5rem;
+			height: 2.5rem;
+			margin-left: 1rem;
+			padding-left: 0.5rem;
+		}
+	
+	}
+
+
+	.nav{
+		@include to(lg){
+			// position: fixed;
+			// left: 0;
+			// bottom: 0;
+			// background: black;
+		}
+	}
+        
+        
+	.menu{
+		list-style: none;
+	}
+
+	.icon{
+		--size: 1.5rem;
+		width: var(--size);
+		height: var(--size);
+		fill: currentColor;
+	}
+	.link{
+		color: lightgrey;
+		&.active{
+			color: cornflowerblue;
+			@include from(lg){
+				color: grey;
+			}
+		}
+	}
+}
